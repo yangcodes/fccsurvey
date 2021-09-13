@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Drag Race Survey Form</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1 id="title">Drag Race Fans! Tell us your choice!</h1>
+      <p id="description">
+        We would love to hear your voice and make this race more grand!
+      </p>
+    </div>
+    <div id="main">
+      <form id="survey-form">
+        <div id="input-fields">
+          <label id="name-label"><b>Name:</b></label>
+          <input
+            id="name"
+            type="name"
+            name="name"
+            class="form"
+            required
+            placeholder="Full Name"
+          /><br />
+          <br />
+          <label id="email-label"><b>Email:</b></label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="form"
+            required
+            placeholder="example@mail.com"
+          /><br />
+          <br />
+          <label id="number-label"><b>Age:</b></label>
+          <input
+            id="number"
+            type="number"
+            name="number"
+            class="form"
+            min="5"
+            max="99"
+            placeholder="12+"
+          />
+        </div>
+        <div id="dropdown-div">
+          <br />
+          <label id="dropdown-label"
+            ><strong>What's your favorite franchise so far: </strong></label
+          ><br />
+          <select id="dropdown" name="country-option" class="form">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Down Under(AUS)">Down Under(AUS)</option>
+            <option value="Holland">Holland</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Italy">Italy</option>
+          </select>
+        </div>
+        <div id="button-area">
+          <br />
+          <label id="gender"><b>Your Gender:</b></label
+          ><br />
+          <input
+            type="radio"
+            class="radio-inline"
+            name="gender"
+            value="female"
+            checked
+          />
+          Female<br />
+          <input type="radio" class="radio-inline" name="gender" value="male" />
+          Male<br />
+          <input
+            type="radio"
+            class="radio-inline"
+            name="gender"
+            value="fluid"
+          />
+          Fluid<br />
+          <input
+            type="radio"
+            class="radio-inline"
+            name="gender"
+            value="other"
+          />
+          Other
+        </div>
+        <div id="button-area">
+          <br />
+          <label id="sex-orientation"><b>Your Sexuality </b></label><br />
+
+          <input type="checkbox" name="so2" value="gay" checked /> I am gay<br />
+          <input type="checkbox" name="so3" value="lesbian" /> I am lesbian<br />
+          <input type="checkbox" name="so4" value="bisexual" /> I am bisexual<br />
+          <input type="checkbox" name="so5" value="bicurious" /> I am
+          bicurious<br />
+          <input type="checkbox" name="so6" value="pansexual" /> I am
+          pansexual<br />
+          <input type="checkbox" name="so7" value="asexual" /> I am asexual<br />
+          <input type="checkbox" name="so1" value="straight" /> I am straight<br />
+        </div>
+
+        <div id="dropdown">
+          <br /><br />
+          <label id="dropdown-label"
+            ><strong
+              >Which upcoming season excites you the most:
+            </strong></label
+          ><br />
+          <select id="dropdown" name="season-option" class="form">
+            <br /><br />
+            <option value="USA15">USA 15</option>
+            <option value="UK3">UK 3</option>
+            <option value="A2">AUS 2</option>
+            <option value="H2">HOLLAND 2</option>
+            <option value="AW">All Winner Season</option>
+            <option value="AS6">All Star 6</option>
+          </select>
+        </div>
+
+        <div id="ending">
+          <br /><br />
+          <label id="comments-label"
+            >Do you have any suggestion about this survey?</label
+          ><br />
+          <textarea
+            style="height: 120px"
+            class="form"
+            placeholder="We appreciate your review review..."
+          ></textarea
+          ><br /><br />
+          <input id="submit" type="submit" class="form" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
